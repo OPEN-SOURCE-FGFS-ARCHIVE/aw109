@@ -1,38 +1,38 @@
-# AgustaWestland AW139
-FG Aircraft | Agusta Westland AW139 Helicopter by Heiko Schulz et al.,. Updated by Lester
+# Open Source FlightGear Archive: aw109
 
-Max Gross weight: 14110 lbs
-  Empty weight: 7985 lbs 
-   Minimum flight weight: 9700 lbs
-  Max Range: 250 miles (435km)
+> Archival Date: 15.11.2026
 
-  Length: 13.77m (longnose variant)
-  width: 3.04m
-  
-  Main Rotor diameter: 13.8m
-  disc area: 149.6 sqm
-  
-  airfoil: unknwon
+> Source Origin: Recovered from https://sites.google.com/view/fgukhangar/flightgear-uk-home-page/hangar
 
-  Tail rotor diameter: 2.7m
- airfoil: unknwon 
+This item is part of the **[Open Source FlightGear Archive](https://github.com/OPEN-SOURCE-FGFS-ARCHIVE/)**, which preserves FlightGear aircraft, addons, materials and assets with genuine adherence to open-source principles and proper version-control (DVCS) history, where centralized or restricted distribution attempts have obscured it.
 
-  Pratt & Whitney Canada PT6C-67C
-  each max power 1676 shp ( ca. 1250 kw = 160% Torque)
-  
-  Rotor blade and control movement: Main Rotor (collective) +15 24’ ¸ 0 36’
-  Main Rotor (longitudinal cyclic) back 10  ¸ 16 forward
-  Main Rotor (lateral cyclic) left 9 ¸ right 9
-  Tail Rotor pitch range -10 ¸ +24
+Run by **SP-NTX** - sp.ntx.flightgear@gmail.com
 
-  Rotor rpms: unknown!
-  From Flight Manual:
+---
 
-  Datum 3160mm forward of main end of frontdoor.
-  cg- between 5000 and 5500mm from datum
-  mast ca 5020mm
+## Provenance
 
-  Airspeed Limits Never Exceed: 167 kt. between 9700 kg. and 14110lbs gross weight
-  
-  FDM based also on information for the ch53d given in NASA-CR-3144; TR-1087-1
-  and  EASA TYPE CERTIFICATE DATA SHEET
+- **Checksum of downloaded zip (SHA-256):** `1eb7045676504a73ae411faa3183db795ef3eacb84cc389eb06b5f850443efca`
+
+---
+
+## Licensing & Compliance
+
+- **Original Code & Derivatives:** GNU GPL (or compatible upstream terms).
+- **License declared by GitHub:** GNU General Public License v2.0 (`GPL-2.0`)
+- **Archiving basis:** Archived under the Archive's rules: GNU GPL only, no CC-licensed content.
+- **Attribution:** All original authors, modellers, FDM and systems contributors retain full credit. Author names, commit history and provenance are preserved unchanged.
+
+---
+
+## Mirror Status & Disclaimer
+
+This is a passive mirror of publicly available third-party material. The archive maintainer is not the author of the content and does not audit it file by file. Files are provided **"AS IS"**, without warranty of any kind, including merchantability, fitness for a particular purpose and non-infringement. To the extent permitted by law, the maintainer is not liable for damages arising from their use.
+
+---
+
+## Copyright Infringement & Takedown Policy
+
+Verified removal requests: sp.ntx.flightgear@gmail.com OR an Issue on this GitHub repository. Please include the affected files and proof of ownership. Requests will be reviewed and answered within 31 days.
+
+<!-- generated-by: fgfs-archive-tool -->
