@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+<animation>
+        <type>range</type>
+        <min-m>0</min-m>
+        <max-m>100</max-m>
+    </animation>
+
+
+<model>
+<name>pilot1</name>
+
+<path>Aircraft/aw109/Models/kit/People/Helipilot4/pilot.xml</path>
+<offsets>
+<x-m> -1.5 </x-m>
+<y-m> 0.35 </y-m>
+<z-m>-0.72</z-m>
+<heading-deg>0</heading-deg>
+</offsets>
+<overlay>
+			
+			 <animation n="100">
+    <type>scale</type>
+    <property>constants/zero</property>
+    <x-offset>.8</x-offset>
+    <y-offset>0.77</y-offset>
+    <z-offset>0.8</z-offset>
+   </animation>
+		</overlay>
+</model>
+
+<model>
+<name>pilot2</name>
+
+<path>Aircraft/aw109/Models/kit/People/Helipilot4/pilot.xml</path>
+<offsets>
+<x-m> -1.5 </x-m>
+<y-m> -0.33 </y-m>
+<z-m>-0.72</z-m>
+<heading-deg>0</heading-deg>
+</offsets>
+<overlay>
+			
+			 <animation n="100">
+    <type>scale</type>
+    <property>constants/zero</property>
+    <x-offset>.8</x-offset>
+    <y-offset>0.77</y-offset>
+    <z-offset>0.8</z-offset>
+   </animation>
+		</overlay>
+</model>
+
+
+
+
+
+
+<!-- Back row -->
+
+<model>
+<path>Aircraft/aw109/Models/kit/hems/chair.xml</path>
+<offsets>
+<x-m> 0.3 </x-m>
+<y-m>  0.3 </y-m>
+<z-m>-1.27</z-m>
+<heading-deg>-90</heading-deg>
+</offsets>
+<overlay>
+			
+			 <animation n="100">
+    <type>scale</type>
+    <property>constants/zero</property>
+    <x-offset>1</x-offset>
+    <y-offset>0.9</y-offset>
+    <z-offset>0.9</z-offset>
+   </animation>
+		</overlay>
+</model>
+
+<model>
+<path>Aircraft/aw109/Models/kit/hems/chair.xml</path>
+<offsets>
+<x-m> 0.3 </x-m>
+<y-m>  0 </y-m>
+<z-m>-1.27</z-m>
+<heading-deg>-90</heading-deg>
+</offsets>
+<overlay>
+			
+			 <animation n="100">
+    <type>scale</type>
+    <property>constants/zero</property>
+    <x-offset>1</x-offset>
+    <y-offset>0.9</y-offset>
+    <z-offset>0.9</z-offset>
+   </animation>
+		</overlay>
+</model>
+
+
+<model>
+<path>Aircraft/aw109/Models/kit/hems/chair.xml</path>
+<offsets>
+<x-m> 0.3 </x-m>
+<y-m>  -0.3 </y-m>
+<z-m>-1.27</z-m>
+<heading-deg>-90</heading-deg>
+</offsets>
+<overlay>
+			
+			 <animation n="100">
+    <type>scale</type>
+    <property>constants/zero</property>
+    <x-offset>1</x-offset>
+    <y-offset>0.9</y-offset>
+    <z-offset>0.9</z-offset>
+   </animation>
+		</overlay>
+</model>
+
+
+<!-- front row -->
+
+<model>
+<path>Aircraft/aw109/Models/kit/hems/chair.xml</path>
+<offsets>
+<x-m> -0.7 </x-m>
+<y-m>  0.3 </y-m>
+<z-m>-1.27</z-m>
+<heading-deg>90</heading-deg>
+</offsets>
+<overlay>
+			
+			 <animation n="100">
+    <type>scale</type>
+    <property>constants/zero</property>
+    <x-offset>1</x-offset>
+    <y-offset>0.9</y-offset>
+    <z-offset>0.9</z-offset>
+   </animation>
+		</overlay>
+</model>
+
+<model>
+<path>Aircraft/aw109/Models/kit/hems/chair.xml</path>
+<offsets>
+<x-m> -0.7 </x-m>
+<y-m>  0 </y-m>
+<z-m>-1.27</z-m>
+<heading-deg>90</heading-deg>
+</offsets>
+<overlay>
+			
+			 <animation n="100">
+    <type>scale</type>
+    <property>constants/zero</property>
+    <x-offset>1</x-offset>
+    <y-offset>0.9</y-offset>
+    <z-offset>0.9</z-offset>
+   </animation>
+		</overlay>
+</model>
+
+
+<model>
+<path>Aircraft/aw109/Models/kit/hems/chair.xml</path>
+<offsets>
+<x-m> -0.7 </x-m>
+<y-m>  -0.3 </y-m>
+<z-m>-1.27</z-m>
+<heading-deg>90</heading-deg>
+</offsets>
+<overlay>
+			
+			 <animation n="100">
+    <type>scale</type>
+    <property>constants/zero</property>
+    <x-offset>1</x-offset>
+    <y-offset>0.9</y-offset>
+    <z-offset>0.9</z-offset>
+   </animation>
+		</overlay>
+</model>
+
+<!-- floats -->
+
+<model>
+<path>Aircraft/aw109/Models/floats.xml</path>
+<offsets>
+<x-m>0</x-m>
+<y-m>0</y-m>
+<z-m>0</z-m>
+<heading-deg>0</heading-deg>
+</offsets>
+
+</model>
+
+
+<!-- winch -->
+
+
+<model>
+<path>Aircraft/aw109/Models/kit/hoist/exthoist.xml</path>
+<offsets>
+<x-m>-0.6</x-m>
+<y-m>0.55</y-m>
+<z-m>-0.2</z-m>
+<heading-deg>0</heading-deg>
+</offsets>
+
+</model>
+
+
+<!-- wire cutters -->
+
+<model>
+<path>Aircraft/aw109/Models/wirecutters.xml</path>
+<offsets>
+<x-m>0</x-m>
+<y-m>0</y-m>
+<z-m>0</z-m>
+<heading-deg>0</heading-deg>
+</offsets>
+
+</model>
+
+</PropertyList>

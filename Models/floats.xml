@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+ 
+ 
+
+    
+    <path>floats.ac</path>
+   
+ <effect>
+  <inherits-from>Aircraft/aw109/Models/Effects/reflect-uber</inherits-from>
+  <object-name>floats2</object-name>
+  <object-name>floats1</object-name>
+  
+ </effect>
+
+</PropertyList>
+

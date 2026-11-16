@@ -1,0 +1,185 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+	
+	
+<animation>
+        <type>range</type>
+        <min-m>0</min-m>
+        <max-m>500</max-m>
+    </animation>
+
+<model>
+		<name>Pylons</name>
+		<path>Aircraft/aw109/Models/payload/pylons.xml</path>
+		<offsets>
+			<x-m>0</x-m>
+			<y-m>0</y-m>
+			<z-m>0</z-m>
+			<pitch-deg>0.0</pitch-deg>
+		</offsets>
+	</model>	
+
+
+
+
+
+
+  <model>
+		<name>Military</name>
+		<path>Aircraft/aw109/Models/payload/mil.xml</path>
+		<offsets>
+			<x-m>0</x-m>
+            <y-m>  0.00000 </y-m>
+            <z-m>0</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>
+  <animation>
+    <type>select</type>
+    <object-name>Military</object-name>      
+    <condition>
+     
+        <equals>
+          <property>sim/multiplay/generic/string[2]</property>
+          <value>Military</value>
+        </equals>
+       
+    </condition>
+  </animation>	
+
+  
+
+  <model>
+		<name>Passenger</name>
+		<path>Aircraft/aw109/Models/payload/passenger.xml</path>
+		<offsets>
+			<x-m>0</x-m>
+            <y-m>  0.00000 </y-m>
+            <z-m>0</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>
+  <animation>
+    <type>select</type>
+    <object-name>Passenger</object-name>      
+    <condition>
+     
+        <equals>
+          <property>sim/multiplay/generic/string[2]</property>
+          <value>Passenger</value>
+        </equals>
+       
+    </condition>
+  </animation>	
+
+
+
+ <model>
+		<name>SAR</name>
+		<path>Aircraft/aw109/Models/payload/sar.xml</path>
+		<offsets>
+			<x-m>0</x-m>
+            <y-m>  0.00000 </y-m>
+            <z-m>0</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>
+  <animation>
+    <type>select</type>
+    <object-name>SAR</object-name>      
+    <condition>
+     
+        <equals>
+          <property>sim/multiplay/generic/string[2]</property>
+          <value>SAR</value>
+        </equals>
+       
+    </condition>
+  </animation>	
+
+
+ 
+ <model>
+		<name>Hems</name>
+		<path>Aircraft/aw109/Models/payload/hems.xml</path>
+		<offsets>
+			<x-m>0</x-m>
+            <y-m>  0.00000 </y-m>
+            <z-m>0</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>
+  <animation>
+    <type>select</type>
+    <object-name>Hems</object-name>      
+    <condition>
+     
+        <equals>
+          <property>sim/multiplay/generic/string[2]</property>
+          <value>Hems</value>
+        </equals>
+       
+    </condition>
+  </animation>	
+
+
+
+  <model>
+    <name>Law enforcement</name>
+    <path>Aircraft/aw109/Models/payload/police.xml</path>
+    <offsets>
+      <x-m>0</x-m>
+            <y-m>0.00000 </y-m>
+            <z-m>0</z-m>
+      <pitch-deg>0</pitch-deg>
+    </offsets>
+  </model>
+  <animation>
+    <type>select</type>
+    <object-name>Law enforcement</object-name>      
+    <condition>
+     
+        <equals>
+          <property>sim/multiplay/generic/string[2]</property>
+          <value>Law enforcement</value>
+        </equals>
+       
+    </condition>
+  </animation>  
+  
+
+
+
+  <animation>
+  <type>select</type>
+  <object-name>pylon.C</object-name>  
+  <condition>
+  <or>
+   <equals>
+    <property>sim/multiplay/generic/string[2]</property>
+    <value>Passenger</value>
+   </equals>
+   <equals>
+    <property>sim/multiplay/generic/string[2]</property>
+    <value>SAR</value>
+   </equals>
+   <equals>
+    <property>sim/multiplay/generic/string[2]</property>
+    <value>Hems</value>
+   </equals>
+   <equals>
+    <property>sim/multiplay/generic/string[2]</property>
+    <value>Law enforcement</value>
+   </equals>
+  
+    <equals>
+    <property>sim/multiplay/generic/string[2]</property>
+    <value>Military</value>
+   </equals>
+   
+  </or>
+  </condition>
+ </animation>
+
+</PropertyList>

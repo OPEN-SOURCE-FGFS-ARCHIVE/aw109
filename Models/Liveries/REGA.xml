@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+	<sim>
+		<model>
+				<livery>
+					<name type="string">REGA-HB-ZRR</name>
+					 <index type="int">3</index>
+					  <texture>Liveries/REGA.png</texture>
+					   <texture-winch>Liveries/regahoist.jpg</texture-winch>
+					    <texture-winch>Liveries/navihoist.jpg</texture-winch>
+				</livery>
+				
+		 </model>
+	  <rendering>
+    <refl_correction type="string">-0.22</refl_correction>
+	  <fresnel-factor type="string">0.5</fresnel-factor>
+    </rendering>
+	</sim>
+</PropertyList>

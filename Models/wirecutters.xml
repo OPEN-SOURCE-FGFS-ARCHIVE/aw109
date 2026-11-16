@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+ 
+ 
+
+    
+    <path>wirecutters.ac</path>
+   
+ <effect>
+  <inherits-from>Aircraft/aw109/Models/Effects/reflect-uber</inherits-from>
+ 
+			 <object-name>wire_cutter1</object-name>
+			  <object-name>wire_cutter</object-name>
+ </effect>
+
+</PropertyList>
+

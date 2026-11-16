@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+	<path>compass.ac</path>
+
+	<animation>
+		<object-name>fond</object-name>
+		<object-name>face</object-name>
+		<object-name>lubber</object-name>
+		<object-name>vitre</object-name>
+	</animation>
+
+	<animation>
+		<type>noshadow</type>
+		<object-name>vitre</object-name>
+	</animation>
+
+	<effect>
+        <inherits-from>Effects/model-transparent</inherits-from>
+    <condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
+       
+	<object-name>vitre</object-name>
+  
+    </effect> 
+
+	<animation>
+		<type>material</type>
+		<object-name>face</object-name>
+		<object-name>lubber</object-name>
+		<emission>
+			<red>   0.0 </red>
+			<green> 1 </green>
+			<blue>  0.0 </blue>
+			<factor-prop>controls/lighting/instrument-lights-norm</factor-prop>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>face</object-name>
+		<property>instrumentation/magnetic-compass/indicated-heading-deg</property>
+		<axis>
+			<x> 1 </x>
+			<y> 0 </y>
+			<z> 0 </z>
+		</axis>
+	</animation>
+
+	<!-- Cockpit Movement Animation Axis X 
+
+	<animation>
+		<object-name>compasstoshake</object-name>
+		<type>rotate</type>
+		<expression>
+			<clip>
+				<clipMin>-4</clipMin>
+				<clipMax>4</clipMax>
+				<prod>
+					<property>/fdm/yasim/accelerations/arot-y</property>
+					<value>10</value>
+				</prod>
+			</clip>
+		</expression>
+		<center>
+			<x-m>-0.0231</x-m>
+			<y-m>-0.001315</y-m>
+		</center>
+		<axis>
+			<x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>-->
+
+	<!-- Cockpit Movement Animation Axis Z 
+	<animation>
+		<object-name>compasstoshake</object-name>
+		<type>rotate</type>
+		<expression>
+			<clip>
+				<clipMin>-7</clipMin>
+				<clipMax>7</clipMax>
+				<prod>
+					<property>/fdm/yasim/accelerations/a-y</property>
+					<value>-5</value>
+				</prod>
+			</clip>
+		</expression>
+		<center>
+			<x-m>-0.0231</x-m>
+			<y-m>-0.001315</y-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>0</y>
+			<z>1</z>
+		</axis>
+	</animation>-->
+
+</PropertyList>

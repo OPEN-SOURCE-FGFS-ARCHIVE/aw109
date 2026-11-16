@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+	<sim>
+		<model>
+				<livery>
+					<name type="string">NAVY</name>
+					 <index type="int">3</index>
+					  <texture>NAVI.png</texture>
+				</livery>
+			
+		 </model>
+	  <rendering>
+    <refl_correction type="string">-0.5</refl_correction>
+	  <fresnel-factor type="string">0.0</fresnel-factor>
+    </rendering>
+	</sim>
+</PropertyList>

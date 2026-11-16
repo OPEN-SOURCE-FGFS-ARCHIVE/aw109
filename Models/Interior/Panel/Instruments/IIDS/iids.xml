@@ -1,0 +1,440 @@
+<PropertyList>
+
+   
+        <path>eng1.ac</path>
+       
+	<animation>
+<type>material</type>
+<object-name>screen6</object-name>
+<emission>
+<factor-prop>controls/lighting/landing-lights</factor-prop>
+<red>   0.7 </red>
+<green> 0.7 </green>
+<blue>  0.7 </blue>
+</emission>
+</animation>	
+<!-- text 	-->
+	
+	<animation>
+  <type>material</type>
+    <object-name>ng1</object-name>
+  <object-name>tit1</object-name>
+  <object-name>tit1a</object-name>
+ 
+  <object-name>ng3</object-name>
+  <object-name>tit3</object-name>
+   <object-name>tit3a</object-name>
+   <object-name>n21</object-name>
+  <object-name>n21a</object-name>
+
+  <object-name>n23</object-name>
+  <object-name>n23a</object-name>
+   <object-name>pct1</object-name>
+   
+	 <object-name>pct3</object-name>
+	 <object-name>rotor</object-name>
+	 <object-name>rotor1</object-name>
+	   <object-name>tq1</object-name>
+  <object-name>tq1a</object-name>
+ 
+  <object-name>tq3</object-name>
+	<object-name>tq3a</object-name>
+  
+ 
+  <ambient>
+    <red>0.8</red>
+    <green>0.8</green>
+    <blue>0.8</blue>
+  </ambient>
+  <diffuse>
+    <red>0.8</red>
+    <green>0.8</green>
+    <blue>0.8</blue>
+  </diffuse>
+  <emission>
+    <red>0.8</red>
+    <green>0.8</green>
+    <blue>0.8</blue>
+  </emission> 
+ </animation>
+ 
+ 
+ <text>
+  <name>pct1</name>
+  <font>lcd.txf</font>
+  <character-size type="double">0.006</character-size>
+  <offsets>
+   <x-m>0.005</x-m>
+   <y-m>-0.065</y-m>
+   <z-m>0.095</z-m>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">number-value</type>
+  <format type="string">%3.1f</format>
+  <truncate type="bool">false</truncate>
+  <property>engines/engine/n1-pct</property>
+  <draw-text type="bool">true</draw-text>
+  <alignment>right-top</alignment>
+ </text>
+ 
+ 
+ 
+ <text>
+  <name>pct3</name>
+  <font>lcd.txf</font>
+  <character-size type="double">0.006</character-size>
+  <offsets>
+   <x-m>0.005</x-m>
+   <y-m>-0.065</y-m>
+   <z-m>0.078</z-m>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">number-value</type>
+  <format type="string">%3.1f</format>
+  <truncate type="bool">false</truncate>
+  <property>engines/engine[1]/n1-pct</property>
+  <draw-text type="bool">true</draw-text>
+  <alignment>right-top</alignment>
+ </text>
+ 
+ 
+ <text>
+  <name>tit1</name>
+  <font>lcd.txf</font>
+  <character-size type="double">0.006</character-size>
+  <offsets>
+   <x-m>0.005</x-m>
+   <y-m>-0.033</y-m>
+   <z-m>0.095</z-m>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">number-value</type>
+  <format type="string">%3.0f</format>
+  <truncate type="bool">false</truncate>
+  <property>engines/engine/tot-degc</property>
+  <draw-text type="bool">true</draw-text>
+  <alignment>right-top</alignment>
+ </text>
+ 
+ 
+ 
+  <text>
+  <name>tit3</name>
+  <font>lcd.txf</font>
+  <character-size type="double">0.006</character-size>
+  <offsets>
+   <x-m>0.005</x-m>
+   <y-m>-0.033</y-m>
+   <z-m>0.078</z-m>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">number-value</type>
+  <format type="string">%3.0f</format>
+  <truncate type="bool">false</truncate>
+  <property>engines/engine[1]/tot-degc</property>
+  <draw-text type="bool">true</draw-text>
+  <alignment>right-top</alignment>
+ </text>
+ 
+ <text>
+  <name>n21</name>
+  <font>lcd.txf</font>
+  <character-size type="double">0.006</character-size>
+  <offsets>
+   <x-m>0.005</x-m>
+   <y-m>0.02</y-m>
+   <z-m>0.095</z-m>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">number-value</type>
+  <format type="string">%3.0f</format>
+  <truncate type="bool">false</truncate>
+  <property>engines/engine/n2-pct</property>
+  <draw-text type="bool">true</draw-text>
+  <alignment>right-top</alignment>
+ </text>
+ 
+ 
+ 
+ <text>
+  <name>n23</name>
+  <font>lcd.txf</font>
+  <character-size type="double">0.006</character-size>
+  <offsets>
+   <x-m>0.005</x-m>
+   <y-m>0.02</y-m>
+   <z-m>0.078</z-m>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">number-value</type>
+  <format type="string">%3.0f</format>
+  <truncate type="bool">false</truncate>
+  <property>engines/engine[1]/n2-pct</property>
+  <draw-text type="bool">true</draw-text>
+  <alignment>right-top</alignment>
+ </text>
+ 
+  <text>
+  <name>rotor</name>
+  <font>lcd.txf</font>
+  <character-size type="double">0.006</character-size>
+  <offsets>
+   <x-m>0.005</x-m>
+   <y-m>0.052</y-m>
+   <z-m>0.065</z-m>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">number-value</type>
+  <format type="string">%3.0f</format>
+  <truncate type="bool">false</truncate>
+  <property>rotors/main/rpm</property>
+  <draw-text type="bool">true</draw-text>
+  <alignment>right-top</alignment>
+ </text>
+ 
+  
+ 
+ <text>
+  <name>ng1</name>
+  <font>courier-bold.txf</font>
+  <character-size type="double">0.01</character-size>
+  <offsets>
+    <x-m>0.005</x-m>
+   <y-m>-0.083</y-m>
+   <z-m>-0.072</z-m>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">*</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>
+ 
+ 
+ 
+ 
+  <text>
+  <name>ng3</name>
+  <font>courier-bold.txf</font>
+  <character-size type="double">0.01</character-size>
+  <offsets>
+    <x-m>0.005</x-m>
+   <y-m>-0.064</y-m>
+   <z-m>-0.072</z-m>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">*</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>
+ 
+ <text>
+  <name>tit1a</name>
+  <font>courier-bold.txf</font>
+  <character-size type="double">0.01</character-size>
+  <offsets>
+    <x-m>0.005</x-m>
+   <y-m>-0.0515</y-m>
+   <z-m>-0.067</z-m>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">*</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>
+ 
+
+ 
+ <text>
+  <name>tit3a</name>
+  <font>courier-bold.txf</font>
+  <character-size type="double">0.01</character-size>
+  <offsets>
+    <x-m>0.005</x-m>
+   <y-m>-0.033</y-m>
+   <z-m>-0.067</z-m>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">*</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>
+ 
+ <text>
+  <name>n21a</name>
+  <font>courier-bold.txf</font>
+  <character-size type="double">0.01</character-size>
+  <offsets>
+    <x-m>0.005</x-m>
+   <y-m>0.005</y-m>
+   <z-m>-0.072</z-m>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">*</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>
+ 
+ 
+ 
+ <text>
+  <name>n23a</name>
+  <font>courier-bold.txf</font>
+  <character-size type="double">0.01</character-size>
+  <offsets>
+    <x-m>0.005</x-m>
+   <y-m>0.025</y-m>
+   <z-m>-0.072</z-m>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">*</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>
+ 
+ <text>
+  <name>rotor1</name>
+  <font>courier-bold.txf</font>
+  <character-size type="double">0.01</character-size>
+  <offsets>
+    <x-m>0.005</x-m>
+   <y-m>0.043</y-m>
+   <z-m>-0.072</z-m>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">*</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>
+ 
+ 
+ 
+
+  
+ <!-- animations -->
+ 
+ 
+
+ <!--  Ng -->
+
+    <animation>
+        <type>translate</type>
+        <object-name>ng1</object-name>
+		
+       <property>engines/engine/n1-pct</property>
+      
+		<factor>0.0012</factor>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
+    </animation> 
+
+
+	
+	<animation>
+        <type>translate</type>
+        <object-name>ng3</object-name>
+		
+       <property>engines/engine[1]/n1-pct</property>
+      
+		<factor>0.0012</factor>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
+    </animation>	
+	
+	<!-- tit -->
+	
+	 <animation>
+        <type>translate</type>
+        <object-name>tit1a</object-name>
+		
+       <property>engines/engine/tot-degc</property>
+      
+		<factor>0.00009</factor>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
+    </animation> 
+	
+	 
+	
+	 <animation>
+        <type>translate</type>
+        <object-name>tit3a</object-name>
+		
+       <property>engines/engine[1]/tot-degc</property>
+      
+		<factor>0.00009</factor>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
+    </animation> 
+	
+	<!-- n2 -->
+	
+	
+	<animation>
+        <type>translate</type>
+        <object-name>n21a</object-name>
+		
+        <property>engines/engine/n2-pct</property>
+      
+		<factor>0.00097</factor>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
+    </animation> 
+	
+
+	
+	<animation>
+        <type>translate</type>
+        <object-name>n23a</object-name>
+		
+        <property>engines/engine[1]/n2-pct</property>
+      
+		<factor>0.00097</factor>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
+    </animation> 
+	
+	<!-- Rotor RPM -->
+	<animation>
+        <type>translate</type>
+        <object-name>rotor1</object-name>
+		
+        <property>rotors/main/rpm</property>
+      
+		<factor>0.000363</factor>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
+    </animation> 
+	
+	
+
+	
+
+</PropertyList>

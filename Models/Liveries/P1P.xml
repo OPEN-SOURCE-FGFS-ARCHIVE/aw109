@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+	<sim>
+		<model>
+				<livery>
+					<name type="string">texte</name>
+					 <index type="int">3</index>
+					  <texture>Liveries/P1P.png</texture>
+				</livery>
+				
+		 </model>
+	  <rendering>
+    <refl_correction type="string">-1</refl_correction>
+	  <fresnel-factor type="string">0.0</fresnel-factor>
+    </rendering>
+	</sim>
+</PropertyList>

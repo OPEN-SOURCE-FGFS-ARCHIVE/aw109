@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+<animation>
+        <type>range</type>
+        <min-m>0</min-m>
+        <max-m>10</max-m>
+    </animation>
+
+
+    <name>HSI</name>
+    <background>Aircraft/Generic/Panels/Textures/transparent-bg.rgb</background>
+    <w>512</w>
+    <h>366</h>
+
+    <instruments>
+
+        <instrument include="compass.xml">
+            <name>compass</name>
+            <x>256</x>
+            <y>183</y>
+        </instrument>
+
+    </instruments>
+
+</PropertyList>

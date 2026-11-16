@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+	<sim>
+		<model>
+				<livery>
+					<name type="string">Icon</name>
+					 <index type="int">3</index>
+					  <texture>Liveries/PPP3.png</texture>
+				</livery>
+				
+		 </model>
+	  <rendering>
+      <refl_correction type="string">-0.22</refl_correction>
+	    <fresnel-factor type="string">0.5</fresnel-factor>
+      </rendering>
+	</sim>
+</PropertyList>

@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+ 
+ 
+
+    
+    <path>overhead.ac</path>
+	
+<!-- Power levers -->
+
+<animation>
+<type>rotate</type>
+<object-name>eng1</object-name>
+
+
+
+<property>controls/engines/engine/power</property>
+<factor>95</factor>
+<center>
+<x-m>-1.55</x-m>
+<y-m>-0.02</y-m>
+<z-m>-0.205</z-m>
+</center>
+<axis>
+<x>0</x>
+<y>1</y>
+<z>0</z>
+</axis>
+</animation>
+
+<animation>
+<type>rotate</type>
+<object-name>eng2</object-name>
+
+
+
+<property>controls/engines/engine[1]/power</property>
+<factor>95</factor>
+<center>
+<x-m>-1.55</x-m>
+<y-m>0.02</y-m>
+<z-m>-0.205</z-m>
+</center>
+<axis>
+<x>0</x>
+<y>1</y>
+<z>0</z>
+</axis>
+</animation>	
+	
+<!-- Rotorbrake animation -->
+  
+   <animation>
+        <type>rotate</type>
+        <object-name>rotorbrake</object-name>
+       <property>controls/rotor/brake</property>
+		<factor>60</factor>
+      <axis>
+        <x> 0 </x>
+        <y> -1 </y>
+        <z> 0 </z>
+      </axis>
+      <center>
+        <x-m> -1.555</x-m>
+        <y-m> -0.13 </y-m>
+        <z-m> -0.205 </z-m>  
+      </center>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>rotorbrake</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>true</repeatable>
+	<binding>
+					<command>nasal</command>
+					<script>
+						var p = "/controls/rotor/brake";
+						setprop(p, !getprop(p));
+					</script>
+				</binding>
+        </action>
+    </animation>
+
+
+<!-- switches -->
+
+<model>
+    <path>Aircraft/aw109/Models/Interior/Panel/Instruments/Switch/batt-lights.xml</path>
+    <offsets>
+      <x-m> -1.445</x-m>
+        <y-m> 0.167 </y-m>
+        <z-m> -0.195 </z-m>  
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   100 </pitch-deg>
+      <heading-deg> 180 </heading-deg>
+    </offsets>
+  </model>
+  
+  
+  <model>
+    <path>Aircraft/aw109/Models/Interior/Panel/Instruments/switches/gen-start2.xml</path>
+    <offsets>
+      <x-m> -1.445</x-m>
+        <y-m> 0.13 </y-m>
+        <z-m> -0.195 </z-m>  
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   100 </pitch-deg>
+      <heading-deg> 180 </heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/aw109/Models/Interior/Panel/Instruments/switches/gen-start.xml</path>
+    <offsets>
+      <x-m> -1.445</x-m>
+        <y-m> 0.095 </y-m>
+        <z-m> -0.195 </z-m>  
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   100 </pitch-deg>
+      <heading-deg> 180 </heading-deg>
+    </offsets>
+  </model>
+  	
+	 <model>
+    <path>Aircraft/aw109/Models/Interior/Panel/Instruments/switches/bus-tie2.xml</path>
+    <offsets>
+      <x-m> -1.446</x-m>
+        <y-m> 0.05 </y-m>
+        <z-m> -0.195 </z-m>  
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   100 </pitch-deg>
+      <heading-deg> 180 </heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/aw109/Models/Interior/Panel/Instruments/switches/bus-tie1.xml</path>
+    <offsets>
+      <x-m> -1.446</x-m>
+        <y-m> -0.017 </y-m>
+        <z-m> -0.195 </z-m>  
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   100 </pitch-deg>
+      <heading-deg> 180 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- invertors  Not active -->
+
+ <model>
+    <path>Aircraft/aw109/Models/Interior/Panel/Instruments/switches/spare.xml</path>
+    <offsets>
+      <x-m> -1.435</x-m>
+        <y-m> -0.06 </y-m>
+        <z-m> -0.195 </z-m>  
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   100 </pitch-deg>
+      <heading-deg> 180 </heading-deg>
+    </offsets>
+  </model>
+
+
+<model>
+    <path>Aircraft/aw109/Models/Interior/Panel/Instruments/switches/spare.xml</path>
+    <offsets>
+      <x-m> -1.435</x-m>
+        <y-m> -0.1 </y-m>
+        <z-m> -0.195 </z-m>  
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   100 </pitch-deg>
+      <heading-deg> 180 </heading-deg>
+    </offsets>
+  </model>
+
+<model>
+    <path>Aircraft/aw109/Models/Interior/Panel/Instruments/switches/spare.xml</path>
+    <offsets>
+      <x-m> -1.435</x-m>
+        <y-m> -0.14 </y-m>
+        <z-m> -0.195 </z-m>  
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   100 </pitch-deg>
+      <heading-deg> 180 </heading-deg>
+    </offsets>
+  </model>
+  
+  <!--  -->
+  
+   <model>
+    <path>Aircraft/aw109/Models/Interior/Panel/Instruments/switches/engheat.xml</path>
+    <offsets>
+      <x-m> -1.37</x-m>
+        <y-m> 0.136 </y-m>
+        <z-m> -0.181 </z-m>  
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   100 </pitch-deg>
+      <heading-deg> 180 </heading-deg>
+    </offsets>
+	<overlay>
+			
+			 <animation n="100">
+    <type>scale</type>
+    <property>constants/zero</property>
+    <x-offset>2</x-offset>
+    <y-offset>2</y-offset>
+    <z-offset>2</z-offset>
+   </animation>
+		</overlay>
+  </model>
+  
+   <model>
+    <path>Aircraft/aw109/Models/Interior/Panel/Instruments/Switch/pito-lights.xml</path>
+    <offsets>
+      <x-m> -1.37</x-m>
+        <y-m> 0.093 </y-m>
+        <z-m> -0.181 </z-m>  
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   100 </pitch-deg>
+      <heading-deg> 180 </heading-deg>
+    </offsets>
+	<overlay>
+			
+			 <animation n="100">
+    <type>scale</type>
+    <property>constants/zero</property>
+    <x-offset>2</x-offset>
+    <y-offset>2</y-offset>
+    <z-offset>2</z-offset>
+   </animation>
+		</overlay>
+  </model>
+  
+    <model>
+    <path>Aircraft/aw109/Models/Interior/Panel/Instruments/Switch/pito-lights.xml</path>
+    <offsets>
+      <x-m> -1.37</x-m>
+        <y-m> 0.052 </y-m>
+        <z-m> -0.181 </z-m>  
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   100 </pitch-deg>
+      <heading-deg> 180 </heading-deg>
+    </offsets>
+	<overlay>
+			
+			 <animation n="100">
+    <type>scale</type>
+    <property>constants/zero</property>
+    <x-offset>2</x-offset>
+    <y-offset>2</y-offset>
+    <z-offset>2</z-offset>
+   </animation>
+		</overlay>
+  </model>
+  
+  <!-- Not active -->
+  
+   <model>
+    <path>Aircraft/aw109/Models/Interior/Panel/Instruments/switches/spare.xml</path>
+    <offsets>
+      <x-m> -1.37</x-m>
+        <y-m> 0.01 </y-m>
+        <z-m> -0.181 </z-m>  
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   100 </pitch-deg>
+      <heading-deg> 180 </heading-deg>
+    </offsets>
+	<overlay>
+			
+			 <animation n="100">
+    <type>scale</type>
+    <property>constants/zero</property>
+    <x-offset>2</x-offset>
+    <y-offset>2</y-offset>
+    <z-offset>2</z-offset>
+   </animation>
+		</overlay>
+  </model>
+  
+   <model>
+    <path>Aircraft/aw109/Models/Interior/Panel/Instruments/switches/spare.xml</path>
+    <offsets>
+      <x-m> -1.377</x-m>
+        <y-m> -0.027 </y-m>
+        <z-m> -0.1815 </z-m>  
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   100 </pitch-deg>
+      <heading-deg> 180 </heading-deg>
+    </offsets>
+	<overlay>
+			
+			 <animation n="100">
+    <type>scale</type>
+    <property>constants/zero</property>
+    <x-offset>2</x-offset>
+    <y-offset>2</y-offset>
+    <z-offset>2</z-offset>
+   </animation>
+		</overlay>
+  </model>
+  
+   <model>
+    <path>Aircraft/aw109/Models/Interior/Panel/Instruments/switches/spare.xml</path>
+    <offsets>
+      <x-m> -1.37</x-m>
+        <y-m> -0.072 </y-m>
+        <z-m> -0.181 </z-m>  
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   100 </pitch-deg>
+      <heading-deg> 180 </heading-deg>
+    </offsets>
+	<overlay>
+			
+			 <animation n="100">
+    <type>scale</type>
+    <property>constants/zero</property>
+    <x-offset>2</x-offset>
+    <y-offset>2</y-offset>
+    <z-offset>2</z-offset>
+   </animation>
+		</overlay>
+  </model>
+  
+   <model>
+    <path>Aircraft/aw109/Models/Interior/Panel/Instruments/switches/spare.xml</path>
+    <offsets>
+      <x-m> -1.372</x-m>
+        <y-m> -0.115 </y-m>
+        <z-m> -0.181 </z-m>  
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   100 </pitch-deg>
+      <heading-deg> 180 </heading-deg>
+    </offsets>
+	<overlay>
+			
+			 <animation n="100">
+    <type>scale</type>
+    <property>constants/zero</property>
+    <x-offset>2</x-offset>
+    <y-offset>2</y-offset>
+    <z-offset>2</z-offset>
+   </animation>
+		</overlay>
+  </model>
+
+<model>
+    <path>Aircraft/aw109/Models/Interior/Panel/Instruments/switches/spare.xml</path>
+    <offsets>
+      <x-m> -1.372</x-m>
+        <y-m> -0.156 </y-m>
+        <z-m> -0.181 </z-m>  
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   100 </pitch-deg>
+      <heading-deg> 180 </heading-deg>
+    </offsets>
+	<overlay>
+			
+			 <animation n="100">
+    <type>scale</type>
+    <property>constants/zero</property>
+    <x-offset>2</x-offset>
+    <y-offset>2</y-offset>
+    <z-offset>2</z-offset>
+   </animation>
+		</overlay>
+  </model>
+  
+  <!--  -->
+  
+   <model>
+    <path>Aircraft/aw109/Models/Interior/Panel/Instruments/switches/beacon.xml</path>
+    <offsets>
+      <x-m> -1.294</x-m>
+        <y-m> 0.14 </y-m>
+        <z-m> -0.17 </z-m>  
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   100 </pitch-deg>
+      <heading-deg> 180 </heading-deg>
+    </offsets>
+	<overlay>
+			
+			 <animation n="100">
+    <type>scale</type>
+    <property>constants/zero</property>
+    <x-offset>2</x-offset>
+    <y-offset>2</y-offset>
+    <z-offset>2</z-offset>
+   </animation>
+		</overlay>
+  </model>
+  
+   <model>
+    <path>Aircraft/aw109/Models/Interior/Panel/Instruments/switches/nav.xml</path>
+    <offsets>
+      <x-m> -1.294</x-m>
+        <y-m> 0.097 </y-m>
+        <z-m> -0.17 </z-m>  
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   100 </pitch-deg>
+      <heading-deg> 180 </heading-deg>
+    </offsets>
+	<overlay>
+			
+			 <animation n="100">
+    <type>scale</type>
+    <property>constants/zero</property>
+    <x-offset>2</x-offset>
+    <y-offset>2</y-offset>
+    <z-offset>2</z-offset>
+   </animation>
+		</overlay>
+  </model>
+  
+  <!-- not used -->
+  
+   <model>
+    <path>Aircraft/aw109/Models/Interior/Panel/Instruments/switches/spare.xml</path>
+    <offsets>
+      <x-m> -1.22</x-m>
+        <y-m> 0.141 </y-m>
+        <z-m> -0.16 </z-m>  
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   90 </pitch-deg>
+      <heading-deg> 180 </heading-deg>
+    </offsets>
+	
+  </model>
+  
+  <model>
+    <path>Aircraft/aw109/Models/Interior/Panel/Instruments/switches/spare.xml</path>
+    <offsets>
+      <x-m> -1.22</x-m>
+        <y-m> 0.116 </y-m>
+        <z-m> -0.16 </z-m>  
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   90 </pitch-deg>
+      <heading-deg> 180 </heading-deg>
+    </offsets>
+	
+  </model>
+  
+  <model>
+    <path>Aircraft/aw109/Models/Interior/Panel/Instruments/switches/spare.xml</path>
+    <offsets>
+      <x-m> -1.22</x-m>
+        <y-m> 0.068 </y-m>
+        <z-m> -0.16 </z-m>  
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   90 </pitch-deg>
+      <heading-deg> 180 </heading-deg>
+    </offsets>
+	
+  </model>
+  
+   <model>
+    <path>Aircraft/aw109/Models/Interior/Panel/Instruments/switches/spare.xml</path>
+    <offsets>
+      <x-m> -1.22</x-m>
+        <y-m> 0.043 </y-m>
+        <z-m> -0.16 </z-m>  
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   90 </pitch-deg>
+      <heading-deg> 180 </heading-deg>
+    </offsets>
+	
+  </model>
+  
+  <!-- -->
+  
+    <model>
+    <path>Aircraft/aw109/Models/Interior/Panel/Instruments/switches/ess-bus.xml</path>
+    <offsets>
+      <x-m> -1.22</x-m>
+        <y-m> -0.013 </y-m>
+        <z-m> -0.16 </z-m>  
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   90 </pitch-deg>
+      <heading-deg> 180 </heading-deg>
+    </offsets>
+	
+  </model>
+  
+   <model>
+    <path>Aircraft/aw109/Models/Interior/Panel/Instruments/switches/ess-bus.xml</path>
+    <offsets>
+      <x-m> -1.22</x-m>
+        <y-m> -0.053 </y-m>
+        <z-m> -0.16 </z-m>  
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   90 </pitch-deg>
+      <heading-deg> 180 </heading-deg>
+    </offsets>
+	
+  </model>
+  
+   <model>
+    <path>Aircraft/aw109/Models/Interior/Panel/Instruments/switches/ess-bus.xml</path>
+    <offsets>
+      <x-m> -1.22</x-m>
+        <y-m> -0.09 </y-m>
+        <z-m> -0.16 </z-m>  
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   90 </pitch-deg>
+      <heading-deg> 180 </heading-deg>
+    </offsets>
+	
+  </model>
+  
+  
+  
+   <model>
+    <path>Aircraft/aw109/Models/Interior/Panel/Instruments/PanelLights/lights.xml</path>
+    <offsets>
+      <x-m> -1.297</x-m>
+        <y-m> -0.067 </y-m>
+        <z-m> -0.155 </z-m>  
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   100 </pitch-deg>
+      <heading-deg> 180 </heading-deg>
+    </offsets>
+	<overlay>
+			
+			 <animation n="100">
+    <type>scale</type>
+    <property>constants/zero</property>
+    <x-offset>1.5</x-offset>
+    <y-offset>2.5</y-offset>
+    <z-offset>2.5</z-offset>
+   </animation>
+		</overlay>
+  </model>
+  
+  
+  <!-- lighting -->
+  
+   <model>
+	<path>Aircraft/aw109/Models/Lights/GreenDashLight.xml</path>
+	<offsets>
+		<x-m>-1.7</x-m>
+		<y-m>-0.00</y-m>
+		<z-m>-0.3</z-m>
+		<pitch-deg>150</pitch-deg>
+	</offsets>
+	</model>
+
+</PropertyList>
+

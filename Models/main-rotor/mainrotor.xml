@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>main-rotor.ac</path>
+  
+   <!-- Blades -->
+  <model>
+    <name>Blade-1</name>
+    <path>Aircraft/aw109/Models/main-rotor/blade1.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.000 </z-m>
+      <roll-deg>     0 </roll-deg>
+      <pitch-deg>    0 </pitch-deg>
+      <heading-deg>  0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <name>Blade-2</name>
+    <path>Aircraft/aw109/Models/main-rotor/blade2.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.000 </z-m>
+      <roll-deg>      0 </roll-deg>
+      <pitch-deg>     0 </pitch-deg>
+      <heading-deg> 90 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <name>Blade-3</name>
+    <path>Aircraft/aw109/Models/main-rotor/blade3.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.000 </z-m>
+      <roll-deg>      0 </roll-deg>
+      <pitch-deg>     0 </pitch-deg>
+      <heading-deg> 180 </heading-deg>
+    </offsets>
+  </model>
+
+ <model>
+    <name>Blade-4</name>
+    <path>Aircraft/aw109/Models/main-rotor/blade4.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.000 </z-m>
+      <roll-deg>      0 </roll-deg>
+      <pitch-deg>     0 </pitch-deg>
+      <heading-deg> 270 </heading-deg>
+    </offsets>
+  </model>
+  
+
+
+
+<!-- main rotor rotation -->
+  <animation>
+    <name>rotorcomplete</name>
+    <object-name>Blade-1</object-name>
+    <object-name>Blade-2</object-name>
+    <object-name>Blade-3</object-name>
+    <object-name>Blade-4</object-name>
+    <object-name>base</object-name>
+    <object-name>cap</object-name>
+	 <object-name>centre2</object-name>
+    <object-name>centre1</object-name>
+	 <object-name>rod1</object-name>
+    <object-name>rod2</object-name>
+	 <object-name>rod3</object-name>
+    <object-name>rod4</object-name>
+	
+	
+	
+  </animation>
+
+  <animation>
+    <type>spin</type>
+    <object-name>rotorcomplete</object-name>
+    <property>rotors/main/rpm</property>
+    <factor>1</factor>
+    <center>
+       <x-m> 0 </x-m>
+       <y-m> 0 </y-m>
+       <z-m> 0 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  0 </y>
+      <z>  1 </z>
+    </axis>
+  </animation>
+
+  
+
+</PropertyList>
+
